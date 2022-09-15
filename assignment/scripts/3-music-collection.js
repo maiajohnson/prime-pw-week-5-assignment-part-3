@@ -30,3 +30,17 @@ function showCollection(array) {
 }
 
 showCollection(collection);
+
+
+ 
+function findByArtist(array, artist) {
+  let matchedArtist = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].artist === artist) {
+      matchedArtist.push(array[i]);
+    }
+  }
+  return matchedArtist;
+    }
+
+console.log(findByArtist(collection, 'IDKHOW'));
