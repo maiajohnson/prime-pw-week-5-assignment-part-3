@@ -3,8 +3,13 @@ console.log('***** Music Collection *****')
 let collection = [];
 
 function addToCollection(title, artist, yearPublished) {
-    let album = [title, artist, yearPublished]
+    let album = {
+      title: title,
+      artist: artist,
+      yearPublished: yearPublished,
+    }
     collection.push(album);
+    console.log(album);
     return;
 }
 
@@ -16,3 +21,13 @@ addToCollection('Ruin', 'The Amazing Devil', '2021');
 addToCollection('Runaway, Run', 'molly ofgeography', '2020');
 
 console.log(collection);
+
+function showCollection(array) {
+    console.log(array.length);
+  for (let i = 0; i < array.length; i++) {
+    console.log(array[0], 'by', array[1],', published in', array[2]);
+    
+  }
+}
+
+console.log(showCollection(collection));
