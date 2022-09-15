@@ -9,25 +9,24 @@ function addToCollection(title, artist, yearPublished) {
       yearPublished: yearPublished,
     }
     collection.push(album);
-    console.log(album);
-    return;
+    return album;
 }
 
-addToCollection('Currents', 'Tame Impala', '2015');
-addToCollection('21st Century Breakdown', 'Green Day', '2009');
-addToCollection('RAZZMATAZZ', 'IDKHOW', '2020');
-addToCollection('you ruined new york city for me', 'FLETCHER', '2019');
-addToCollection('Ruin', 'The Amazing Devil', '2021');
-addToCollection('Runaway, Run', 'molly ofgeography', '2020');
+console.log('Added', addToCollection('Currents', 'Tame Impala', '2015'));
+console.log('Added', addToCollection('21st Century Breakdown', 'Green Day', '2009'));
+console.log('Added', addToCollection('RAZZMATAZZ', 'IDKHOW', '2020'));
+console.log('Added', addToCollection('you ruined new york city for me', 'FLETCHER', '2019'));
+console.log('Added', addToCollection('Ruin', 'The Amazing Devil', '2021'));
+console.log('Added', addToCollection('Runaway, Run', 'molly ofgeography', '2020'));
 
 console.log(collection);
 
 function showCollection(array) {
     console.log(array.length);
   for (let i = 0; i < array.length; i++) {
-    console.log(array[0], 'by', array[1],', published in', array[2]);
-    
+    console.log(array[i].title)
+   
   }
 }
 
-console.log(showCollection(collection));
+showCollection(collection);
