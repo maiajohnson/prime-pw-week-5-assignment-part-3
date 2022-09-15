@@ -24,7 +24,7 @@ console.log(collection);
 function showCollection(array) {
     console.log(array.length);
   for (let i = 0; i < array.length; i++) {
-    console.log(array[i].title)
+    console.log(array[i].title, 'by', array[i].artist, 'published in', array[i].yearPublished);
    
   }
 }
